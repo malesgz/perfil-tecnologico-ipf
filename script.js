@@ -374,9 +374,6 @@ function showResult() {
     });
   }, 400);
 
-  // QR
-  generateQR(profile.id);
-
   // Accordion
   buildAccordion(winnerId);
 
