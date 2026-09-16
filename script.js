@@ -3,7 +3,7 @@
 ═══════════════════════════════════════════ */
 const QUESTIONS = [
   {
-    text: "Cuando tenés tiempo libre, generalmente preferís...",
+    text: "01 Cuando tenés tiempo libre, generalmente preferís...",
     options: [
       { text: "Crear algo nuevo", sub: "Dibujar, diseñar, armar o construir cosas originales", scores: { ux: 3, multi: 2 } },
       { text: "Investigar y aprender", sub: "Buscar cómo funciona algo que te genera curiosidad", scores: { ia: 3, back: 1, sec: 1 } },
@@ -12,7 +12,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "¿Qué actividad te gustaría realizar más en un proyecto?",
+    text: "02 ¿Qué actividad te gustaría realizar más en un proyecto?",
     options: [
       { text: "Diseñar como se vería", sub: "Elegir colores, tipografías, cómo se ve y se siente algo", scores: { ux: 3, multi: 2 } },
       { text: "Hacer que todo funcione correctamente", sub: "Que los datos se guarden y que el sistema responda bien", scores: { back: 3, cloud: 1 } },
@@ -21,7 +21,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "En un trabajo en equipo, normalmente sos quien...",
+    text: "03 En un trabajo en equipo, normalmente sos quien...",
     options: [
       { text: "Presenta las ideas de forma visual", sub: "Hacés las diapositivas, el diseño, lo que se ve en la pantalla", scores: { ux: 3, multi: 1 } },
       { text: "Ordena y distribuye las tareas", sub: "Gestionás tiempos, recursos y te asegurás que todo fluya", scores: { cloud: 3, back: 2 } },
@@ -30,7 +30,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "¿Qué tipo de desafío te resulta más interesante?",
+    text: "04 ¿Qué tipo de desafío te resulta más interesante?",
     options: [
       { text: "Crear vistas que sirvan al usuario", sub: "Diseñar algo tan intuitivo que no necesite instrucciones", scores: { ux: 3, multi: 2 } },
       { text: "Resolver un problema complejo paso a paso", sub: "Descomponer un desafío grande en partes más pequeñas", scores: { back: 3, ia: 1 } },
@@ -39,7 +39,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "¿Qué materia o temática disfrutás más?",
+    text: "05 ¿Qué materia o temática disfrutás más?",
     options: [
       { text: "Arte, diseño o comunicación visual", sub: "La estética, la composición, transmitir con imágenes", scores: { ux: 3, multi: 2 } },
       { text: "Matemáticas o lógica", sub: "Resolver ecuaciones, pensar de forma estructurada", scores: { back: 2, ia: 3 } },
@@ -48,7 +48,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "Si pudieras hacer cualquier proyecto personal, elegirías...",
+    text: "06 Si pudieras hacer cualquier proyecto personal, elegirías...",
     options: [
       { text: "Crear una aplicación con buen diseño", sub: "Algo visualmente impactante que mejore la experiencia de las personas", scores: { ux: 3, multi: 2 } },
       { text: "Construir un sistema que maneje mucha información", sub: "Una plataforma grande que funcione para muchos usuarios a la vez", scores: { back: 3, cloud: 2 } },
@@ -57,7 +57,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "¿Qué te genera más curiosidad en el mundo tecnológico actual?",
+    text: "07 ¿Qué te genera más curiosidad en el mundo tecnológico actual?",
     options: [
       { text: "Cómo se diseñan apps que millones de personas usan", sub: "Spotify, Instagram, WhatsApp", scores: { ux: 3, multi: 2 } },
       { text: "Cómo las máquinas pueden aprender y mejorar solas", sub: "ChatGPT, recomendaciones de Netflix, filtros de fotos con IA", scores: { ia: 3, back: 1 } },
@@ -66,7 +66,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "¿Cómo preferís resolver un problema difícil?",
+    text: "08 ¿Cómo preferís resolver un problema difícil?",
     options: [
       { text: "Visualizándolo: diagramas, bocetos, prototipos", sub: "Necesito verlo para entenderlo mejor", scores: { ux: 3, ia: 1 } },
       { text: "Dividiéndolo en partes más pequeñas", sub: "Lo descompongo paso a paso hasta encontrar la solución", scores: { back: 3, cloud: 1 } },
