@@ -82,7 +82,6 @@ const QUESTIONS = [
 const PROFILES = {
   ux: {
     id: "frontend",
-    emoji: "🎨",
     title: "UX/UI y Desarrollo Frontend",
     desc: "Sos una persona creativa con gran sensibilidad visual y una enorme capacidad para ponerse en el lugar de los demás. Pensás en cómo las personas sienten y viven las experiencias digitales.",
     role: "Diseñás y construís las interfaces que los usuarios ven y usan todos los días. Tomás decisiones sobre colores, tipografías, flujos de navegación y animaciones.",
@@ -95,7 +94,6 @@ const PROFILES = {
   },
   back: {
     id: "backend",
-    emoji: "👨‍💻",
     title: "Desarrollo Backend",
     desc: "Sos una persona analítica, lógica y estructurada. Te gusta construir cosas sólidas, entender cómo funcionan los sistemas por dentro y resolver problemas complejos paso a paso.",
     role: "Desarrollás la 'parte invisible' de las aplicaciones: servidores, bases de datos, lógica de negocio y las conexiones entre distintos sistemas.",
@@ -108,7 +106,6 @@ const PROFILES = {
   },
   multi: {
     id: "multiplataforma",
-    emoji: "📱",
     title: "Desarrollo Multiplataforma",
     desc: "Sos alguien versátil y orientado a resultados. Te atrae la idea de crear productos que lleguen a la mayor cantidad de personas posible, sin importar el dispositivo que usen.",
     role: "Creás aplicaciones que funcionan en celulares, tablets y computadoras con un mismo código base. Combinás habilidades de diseño y programación.",
@@ -121,7 +118,6 @@ const PROFILES = {
   },
   ia: {
     id: "ia",
-    emoji: "🤖",
     title: "Inteligencia Artificial y Datos",
     desc: "Sos una persona curiosa, analítica y amante de los datos. Disfrutás descubrir patrones, entender fenómenos complejos y hacer predicciones basadas en evidencia.",
     role: "Entrenás modelos que aprenden solos, analizás grandes volúmenes de datos y construís sistemas que toman decisiones inteligentes de forma automática.",
@@ -134,7 +130,6 @@ const PROFILES = {
   },
   sec: {
     id: "ciberseguridad",
-    emoji: "🛡️",
     title: "Ciberseguridad",
     desc: "Sos alguien con mente investigadora, pensamiento lateral y una necesidad de entender cómo funcionan los sistemas para encontrar sus puntos débiles. El mundo digital te necesita.",
     role: "Protegés sistemas, aplicaciones y datos de ataques. Buscás vulnerabilidades antes de que los atacantes las encuentren, y diseñás defensas para mantener todo seguro.",
@@ -147,7 +142,6 @@ const PROFILES = {
   },
   cloud: {
     id: "cloud",
-    emoji: "☁️",
     title: "Cloud y DevOps",
     desc: "Sos una persona organizada, sistemática y con visión de conjunto. Te atrae la idea de que todo funcione de manera eficiente, escalable y sin interrupciones.",
     role: "Gestionás la infraestructura tecnológica: servidores en la nube, automatización de procesos, despliegue de aplicaciones y monitoreo continuo de sistemas.",
@@ -313,31 +307,31 @@ function showResult() {
 
   // Render detail
   document.getElementById('detail-role').innerHTML = `
-    <h4>🎯 ¿A qué se dedica?</h4>
+    <h4> ¿A qué se dedica?</h4>
     <p>${profile.role}</p>
   `;
   document.getElementById('detail-why').innerHTML = `
-    <h4>💡 ¿Por qué es importante?</h4>
+    <h4> ¿Por qué es importante?</h4>
     <p>${profile.why}</p>
   `;
   document.getElementById('detail-workplaces').innerHTML = `
-    <h4>🏢 Dónde podría trabajar</h4>
+    <h4> Dónde podría trabajar</h4>
     <ul>${profile.workplaces.map(w=>`<li>${w}</li>`).join('')}</ul>
   `;
   document.getElementById('detail-skills').innerHTML = `
-    <h4>🧠 Habilidades que desarrollaría</h4>
+    <h4> Habilidades que desarrollaría</h4>
     <div class="detail-tag-list">${profile.skills.map(s=>`<span class="detail-tag">${s}</span>`).join('')}</div>
   `;
   document.getElementById('detail-projects').innerHTML = `
-    <h4>🚀 Proyectos reales de este perfil</h4>
+    <h4> Proyectos reales de este perfil</h4>
     <div class="detail-tag-list">${profile.projects.map(p=>`<span class="detail-tag">${p}</span>`).join('')}</div>
   `;
   document.getElementById('detail-future').innerHTML = `
-    <h4>🛤️ Caminos futuros</h4>
+    <h4> Caminos futuros</h4>
     <p>${profile.future}</p>
   `;
   document.getElementById('detail-personal').innerHTML = `
-    <h4>✨ Por qué obtuviste este perfil</h4>
+    <h4> Por qué obtuviste este perfil</h4>
     <p>${profile.personal}</p>
   `;
   // Asegurarse de que el bloque "por qué" quede visible sin scroll en mobile
