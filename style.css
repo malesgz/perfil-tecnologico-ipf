@@ -410,20 +410,17 @@ body {
   flex-direction: column;
   gap: 24px;
   transition: all 0.3s;
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: none !important;
-  box-shadow: none !important;
 }
 
 .q-number {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: rgba(1,77,79,0.1);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(1,77,79,0.4);
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   user-select: none;
+  margin-bottom: 4px;
 }
 
 .q-text {
@@ -448,7 +445,7 @@ body {
   text-align: left;
   background: rgba(255,255,255,0.6);
   border: 2px solid var(--c-border);
-  border-radius: var(--radius-sm);
+  border-radius: 16px;
   padding: 16px 20px;
   cursor: pointer;
   font-family: var(--font);
@@ -943,3 +940,28 @@ body {
 .bar-color-3 { background: linear-gradient(90deg, #F59E0B, #FCD34D); }
 .bar-color-4 { background: linear-gradient(90deg, #EF4444, #F87171); }
 .bar-color-5 { background: linear-gradient(90deg, #10B981, #34D399); }
+/* ═══════════════════════════════════════════
+   LOGO IPF
+═══════════════════════════════════════════ */
+.ipf-logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ipf-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(1,77,79,0.18));
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION CARD — sin fondo blanco
+═══════════════════════════════════════════ */
+.question-card {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
