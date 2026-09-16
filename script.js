@@ -183,7 +183,6 @@ const qCounter        = document.getElementById('q-counter');
 const qPercent        = document.getElementById('q-percent');
 const progressFill    = document.getElementById('progress-fill');
 const questionCard    = document.getElementById('question-card');
-const qNumberLabel    = document.getElementById('q-number-label');
 const qText           = document.getElementById('q-text');
 const optionsGrid     = document.getElementById('options-grid');
 
