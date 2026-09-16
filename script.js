@@ -48,7 +48,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "7. Si pudieras hacer cualquier proyecto personal, elegirías...",
+    text: "6. Si pudieras hacer cualquier proyecto personal, elegirías...",
     options: [
       { text: "Crear una aplicación con buen diseño", sub: "Algo visualmente impactante que mejore la experiencia de las personas", scores: { ux: 3, multi: 2 } },
       { text: "Construir un sistema que maneje mucha información", sub: "Una plataforma grande que funcione para muchos usuarios a la vez", scores: { back: 3, cloud: 2 } },
@@ -57,7 +57,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "8. ¿Qué te genera más curiosidad en el mundo tecnológico actual?",
+    text: "7. ¿Qué te genera más curiosidad en el mundo tecnológico actual?",
     options: [
       { text: "Cómo se diseñan apps que millones de personas usan", sub: "Spotify, Instagram, WhatsApp", scores: { ux: 3, multi: 2 } },
       { text: "Cómo las máquinas pueden aprender y mejorar solas", sub: "ChatGPT, recomendaciones de Netflix, filtros de fotos con IA", scores: { ia: 3, back: 1 } },
@@ -66,7 +66,7 @@ const QUESTIONS = [
     ]
   },
   {
-    text: "08 ¿Cómo preferís resolver un problema difícil?",
+    text: "8. ¿Cómo preferís resolver un problema difícil?",
     options: [
       { text: "Visualizándolo: diagramas, bocetos, prototipos", sub: "Necesito verlo para entenderlo mejor", scores: { ux: 3, ia: 1 } },
       { text: "Dividiéndolo en partes más pequeñas", sub: "Lo descompongo paso a paso hasta encontrar la solución", scores: { back: 3, cloud: 1 } },
