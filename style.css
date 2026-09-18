@@ -23,7 +23,7 @@
   --radius: 24px;
   --radius-sm: 14px;
   --radius-xs: 8px;
-  --font: 'Manrope', sans-serif;
+  --font: 'Plus Jakarta Sans', sans-serif;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -413,14 +413,12 @@ body {
 }
 
 .q-number {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: rgba(1,77,79,0.4);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(1,77,79,0.1);
   line-height: 1;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: -0.04em;
   user-select: none;
-  margin-bottom: 4px;
 }
 
 .q-text {
@@ -445,7 +443,7 @@ body {
   text-align: left;
   background: rgba(255,255,255,0.6);
   border: 2px solid var(--c-border);
-  border-radius: 16px;
+  border-radius: var(--radius-sm);
   padding: 16px 20px;
   cursor: pointer;
   font-family: var(--font);
@@ -620,7 +618,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-bottom: 28px;
 }
 
 .detail-block {
@@ -676,10 +673,11 @@ body {
 }
 
 .detail-personal {
-  background: linear-gradient(135deg, rgba(1,77,79,0.06) 0%, rgba(0,201,167,0.06) 100%);
+  background: #ffffff;
   border: 1px solid rgba(0,201,167,0.25);
   border-radius: var(--radius-sm);
   padding: 24px;
+  margin-bottom: 24px;
 }
 
 .detail-personal h4 {
@@ -940,28 +938,3 @@ body {
 .bar-color-3 { background: linear-gradient(90deg, #F59E0B, #FCD34D); }
 .bar-color-4 { background: linear-gradient(90deg, #EF4444, #F87171); }
 .bar-color-5 { background: linear-gradient(90deg, #10B981, #34D399); }
-/* ═══════════════════════════════════════════
-   LOGO IPF
-═══════════════════════════════════════════ */
-.ipf-logo-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.ipf-logo {
-  height: 52px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(1,77,79,0.18));
-}
-
-/* ═══════════════════════════════════════════
-   QUESTION CARD — sin fondo blanco
-═══════════════════════════════════════════ */
-.question-card {
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}

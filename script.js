@@ -183,7 +183,7 @@ const qCounter        = document.getElementById('q-counter');
 const qPercent        = document.getElementById('q-percent');
 const progressFill    = document.getElementById('progress-fill');
 const questionCard    = document.getElementById('question-card');
-
+const qNumberLabel    = document.getElementById('q-number-label');
 const qText           = document.getElementById('q-text');
 const optionsGrid     = document.getElementById('options-grid');
 
@@ -224,7 +224,7 @@ function renderQuestion(idx, dir = 'forward') {
   progressFill.style.width = `${pct}%`;
   progressFill.parentElement.setAttribute('aria-valuenow', pct);
 
-
+  qNumberLabel.textContent = String(idx + 1).padStart(2, '0');
   qText.textContent = q.text;
 
   // Animate card
@@ -372,6 +372,9 @@ function showResult() {
     });
   }, 400);
 
+  // QR
+  generateQR(profile.id);
+
   // Accordion
   buildAccordion(winnerId);
 
@@ -386,6 +389,7 @@ function showResult() {
 ═══════════════════════════════════════════ */
 function generateQR(profileId) {
   const qrBox = document.getElementById('qr-box');
+  if (!qrBox) return;
   const url = `${window.location.origin}${window.location.pathname}#perfil/${profileId}`;
 
   // Use QR Server API (open, no key needed, generates PNG)
@@ -469,6 +473,16 @@ function buildAccordion(currentWinnerId) {
 
 function toggleAccordion(item, trigger) {
   const isOpen = item.classList.contains('open');
+  const list = item.closest('#accordion-list');
+  if (list) {
+    list.querySelectorAll('.accordion-item.open').forEach(openItem => {
+      if (openItem !== item) {
+        openItem.classList.remove('open');
+        const openTrigger = openItem.querySelector('.accordion-trigger');
+        if (openTrigger) openTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
   item.classList.toggle('open', !isOpen);
   trigger.setAttribute('aria-expanded', !isOpen);
 }
